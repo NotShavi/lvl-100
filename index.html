@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/logo.avif">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federant&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Playwrite+DE+SAS:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>PETSUP | Store</title>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div id="headerdiv">
+            <img src="../images/logo.avif" alt="" id="logo">
+            <h2 id="pets">PETS<span>UP</span></h2>
+        </div>
+        <div id="linkdiv">
+            <p id="loginlink"></p>
+        </div>
+        <a href="cart/cart.html"><button id="store" class="submit">Your Cart</button></a>
+    </header>
+    <hr>
+    <div id="main">
+        <div id="left">
+            <div id="inleft">
+            <form id="searchform">
+                <label for="text" id="fortext">Search item</label>
+                <input type="text" name="text" id="text" placeholder="Search item...">
+                <!-- <div id="insearchform">
+                    <button id="submit">Submit</button>
+                </div> -->
+                
+            </form>
+            <hr class="undform">
+            <b class="sort">Categories</b>
+            <br>
+            <form id="filter">
+                <div id="labeldiv">
+                    <input type="radio" name="check" id="all" value="all" checked>
+                    <label for="all">All</label>
+                </div>
+                <div id="labeldiv">
+                    <input type="radio" name="check" id="hoodies" value="hoodies">
+                    <label for="hoodies">Hoodies</label>
+                </div>
+                <div id="labeldiv">
+                    <input type="radio" name="check" id="jackets" value="jackets">
+                    <label for="jackets">Jackets</label>
+                </div>
+                <div id="labeldiv">
+                    <input type="radio" name="check" id="shirts" value="shirts">
+                    <label for="shirts">Shirts</label>
+                </div>
+                <div id="labeldiv">
+                    <input type="radio" name="check" id="extras" value="extras">
+                    <label for="extras">Extras</label>
+                </div>
+            </form>
+            <hr class="undform">
+            <div id="sortdiv">
+                <b class="sort">Sort</b>
+                <select name="sorting" id="sorting">
+                    <option value="default" selected>default</option>
+                    <option value="pricedown">price (high > low)</option>
+                    <option value="priceup">price (low > high)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+        <div id="right">
+            
+        </div>
+    </div>
+    <footer>
+        <div id="footlogo">
+            <img src="../images/logo.avif" alt="" id="footimg">
+            <h2 id="footpets">PETS<span>UP</span></h2>
+        </div>
+        <div id="footerdiv">
+            <div class="infoot">
+                <h3 class="h3s">Locations</h3>
+                <p class="undh3s">France, Paris 75004, 15 Rue de Rosiers</p>
+                <p class="undh3s">France, Paris 75015, 42 Avenue de Suffren</p>
+                <p class="undh3s">France, Paris 75004, 8 Rue de Rivoli</p>
+            </div>
+            <div class="infoot">
+                <h3 class="h3s">Contacts</h3>
+                <p class="undh3s">Mail: contact@petsup.fr</p>
+                <p class="undh3s">Tel: +33 1 99 82 47 15</p>
+                <p class="undh3s">Tel: +33 1 99 57 20 94</p>
+            </div>
+            <div class="infoot">
+                <h3 class="h3s">Socials</h3>
+                <a href="https://www.facebook.com/petsup.store" class="undh3s">Facebook</a>
+                <a href="https://www.instagram.com/petsup.ge" class="undh3s">Instagram</a>
+                <a href="https://www.tiktok.com/@petsup.ge" class="undh3s">Tiktok</a>
+            </div>
+        </div>
+        <p id="rights">© PETSUP - All Rights Reserved</p>
+    </footer>
+</div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#container{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+header{
+    width: 100%;
+    height: 60px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#loginlink{
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#headerdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+span{
+    color: rgb(255, 119, 0);
+}
+
+#store{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(255, 119, 0);
+    transition: 0.25s;
+}
+
+#linkdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+#logoutb{
+    background: transparent;
+    border: 0;
+    margin-right: 9px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#logoutb:hover{
+    transform: scale(1.05);
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    font-size: 15.5px;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#main{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#your{
+    margin-bottom: 10px;
+}
+
+#cartdiv{
+    margin-top: 40px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+#cart{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: #f4f6f9;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.itemdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.iteminfo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex: 1;
+}
+
+.itemimg{
+    height: 104px;
+}
+
+.itemquantity{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.minus,.plus{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#buttondiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttondiv{
+    width: 23%;
+    height: 45px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(255, 119, 0);
+    transition: 0.25s;
+}
+
+.buttondiv:hover{
+    transform: scale(1.05);
+}
+
+#message{
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 33%;
+    padding: 25px;
+    background-color: rgb(255, 119, 0);
+}
+
+#messageh2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#messageinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+#messagebutton{
+    background: transparent;
+    border: 0;
+    font-size: 18px;
+    transition: 0.25s;
+    margin-top: 15px;
+}
+
+#messagebutton:hover{
+    transform: scale(1.1);
+}
+
+#x{
+    width: 15px;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+#x:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    position: relative;
+    margin-top: 60px;
+    background-color: rgb(32, 32, 113);
+    width: 100%;
+    padding: 35px 65px;
+}
+
+#footerdiv{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.infoot{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.h3s{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.undh3s{
+    color: white;
+}
+
+#rights{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: rgb(175, 170, 170);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#footlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+#footpets{
+    color: white;
+}
+
+#footimg{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:769px){
+    #cartdiv{
+        width: 90%;
+    }
+
+    header{
+        padding: 0 30px;
+    }
+    
+    #message{
+        top: 25%;
+        left: 17%;
+    }
+
+    footer{
+        padding-top: 65px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 45px;
+    }
+}
+
+@media (max-width:376px){
+    header{
+        padding: 0;
+        height: 70px;
+    }
+
+    #loginlink{
+        margin-left: 0px;
+        text-decoration: none;
+    }
+
+    #headerdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3px;
+    }
+
+    #logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    span{
+        color: rgb(255, 119, 0);
+    }
+
+    #store{
+        width: 120px;
+        height: 35px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+
+    .submit{
+        width: 50%;
+        height: 40px;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: rgb(255, 119, 0);
+        transition: 0.25s;
+    }
+
+    #linkdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3px;
+        padding-right: 0px;
+    }
+
+    #pets{
+        font-size: 20px;
+    }
+
+    #logoutb{
+        background: transparent;
+        border: 0;
+        font-size: 12px;
+        margin-right: 9px;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+
+    #logoutb:hover{
+        transform: scale(1.05);
+    }
+
+    .submit:hover{
+        transform: scale(1.05);
+        font-size: 15.5px;
+    }
+
+    #cartdiv{
+        margin-top: 40px;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    #cart{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        background-color: #f4f6f9;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .itemdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding-left: 20px; */
+        padding-right: 5px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .iteminfo{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex: 1;
+    }
+
+    .itemimg{
+        height: 60px;
+    }
+
+    .itemname{
+        font-size: 11px;
+    }
+
+    .itemsize{
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .itemprice{
+        font-size: 11px;
+    }
+
+    .itemquantity{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .minus,.plus{
+        background: transparent;
+        border: 0;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .quantity{
+        font-size: 12px;
+    }
+
+    #buttondiv{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+
+    #ininfo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imgd{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .buttondiv{
+        width: 48%;
+        height: 45px;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 22px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: rgb(255, 119, 0);
+        transition: 0.25s;
+    }
+
+    .buttondiv:hover{
+        transform: scale(1.05);
+    }
+
+    .itemtotalprice{
+        /* padding-left: 10px; */
+        font-size: 11px;
+    }
+
+    #message{
+        border-radius: 15px;
+        width: 350px;
+        height: 330px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 25%;
+        left: 12px;
+        padding: 25px;
+        background-color: rgb(255, 119, 0);
+    }
+
+    #messageh2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #messageinfo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #thanks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    #messagebutton{
+        background: transparent;
+        border: 0;
+        font-size: 18px;
+        transition: 0.25s;
+        margin-top: 15px;
+    }
+
+    #messagebutton:hover{
+        transform: scale(1.1);
+    }
+
+    #x{
+        width: 15px;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 16px;
+        transition: 0.25s;
+    }
+
+    #x:hover{
+        transform: scale(1.1);
+    }
+
+    #footerdiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

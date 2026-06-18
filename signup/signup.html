@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/logo.avif">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federant&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Playwrite+DE+SAS:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>PETSUP | Signup</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="headerdiv">
+                <img src="../images/logo.avif" alt="" id="logo">
+                <h2 id="pets">PETS<span>UP</span></h2>
+            </div>
+            <a href="../login/login.html" id="loginlink">Login page</a>
+            <a href="../index.html"><button id="store">Store page</button></a>
+        </header>
+        <div id="form">
+            <h1>Sign Up</h1>
+            <form>
+                <div id="input1">
+                    <div class="input1s">
+                        <label for="firstname">First Name *</label>
+                        <input type="text" name="firstname" id="firstname" required placeholder="Enter your first name">
+                    </div>
+                    <div class="input1s">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div id="emailinp">
+                    <label for="email">Email address *</label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email address">
+                    <div id="emaildiv"></div>
+                </div>
+                <div>
+                    <div id="passinp">
+                    <label for="password">Password *</label>
+                    <input type="password" name="password" id="password" required placeholder="Create password">
+                    <div id="passdiv"></div>
+                </div>
+                <div id="showpass">
+                        <input type="checkbox" name="show" id="show">
+                        <label for="show">Show your password</label>
+                    </div>
+                </div>
+                
+                <div id="agree">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I have read and agreed to the site's Privacy Policy *</label>
+                </div>
+                <div id="button">
+                    <button id="submit">Sign up</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <footer>
+        <div id="footlogo">
+            <img src="../images/logo.avif" alt="" id="footimg">
+            <h2 id="footpets">PETS<span>UP</span></h2>
+        </div>
+        <div id="footerdiv">
+            <div class="infoot">
+                <h4 class="h3s">Locations</h4>
+                <h6 class="undh3s">France, Paris 75004, 15 Rue de Rosiers</h6>
+                <h6 class="undh3s">France, Paris 75015, 42 Avenue de Suffren</h6>
+                <h6 class="undh3s">France, Paris 75004, 8 Rue de Rivoli</h6>
+            </div>
+            <div class="infoot">
+                <h4 class="h3s">Contacts</h4>
+                <h6 class="undh3s">Mail: contact@petsup.fr</h6>
+                <h6 class="undh3s">Tel: +33 1 99 82 47 15</h6>
+                <h6 class="undh3s">Tel: +33 1 99 57 20 94</h6>
+            </div>
+            <div class="infoot">
+                <h4 class="h3s">Socials</h4>
+                <a href="https://www.facebook.com/petsup.store" class="undh3s">Facebook</a>
+                <a href="https://www.instagram.com/petsup.ge" class="undh3s">Instagram</a>
+                <a href="https://www.tiktok.com/@petsup.ge" class="undh3s">Tiktok</a>
+            </div>
+        </div>
+        <p id="rights">© PETSUP - All Rights Reserved</p>
+    </footer>
+
+    <script src="signup.js" type="module"></script>
+</body>
+</html>

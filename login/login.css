@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+
+    background-color: white;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#loginlink{
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#headerdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+span{
+    color: rgb(255, 119, 0);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bonus/6a3ba459161247beaa54e24e456254d3-Picsart-AiImageEnhancer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(250, 198, 101); */
+}
+
+#form{
+    padding-top: 5px;
+    width: 42%;
+    height: 57%;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+
+#input1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.input1s{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+#emailinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#passinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#show{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#showpass{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#showpass label{
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+#agree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#agree label{
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#agree input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit{
+    height: 50px;
+    width: 160px;
+    border: 0;
+    border-radius: 22px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 16px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 530;
+}
+
+#submit:hover{
+    font-size: 16.5px;
+    scale: 1.1;
+}
+
+#store{
+    height: 40px;
+    width: 140px;
+    border: 0;
+    border-radius: 22px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#store:hover{
+    scale: 1.05;
+}
+
+#failed{
+    position: absolute;
+    top: 50px;
+}
+
+#message{
+    position: absolute;
+    left: 42%;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    top: 10px;
+    background-color: rgb(255, 119, 0);
+    height: 160px;
+    width: 265px;
+
+}
+
+#x{
+    background: transparent;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    position:absolute;
+    right: 10px;
+    top: 8px;
+    transition: 0.25s;
+}
+
+#x:hover{
+    transform: scale(1.35);
+}
+
+#inmessage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+}
+
+#log{
+    height: 40px;
+    width: 140px;
+    border: 0;
+    border-radius: 22px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 530;
+    text-decoration: none;
+}
+
+#log:hover{
+    scale: 1.05;
+}
+
+footer{
+    position: relative;
+    background-color: rgb(32, 32, 113);
+    width: 100%;
+    padding: 35px 65px;
+}
+
+#footerdiv{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.infoot{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.h3s{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.undh3s{
+    color: white;
+}
+
+#rights{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: rgb(175, 170, 170);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#footlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+#footpets{
+    color: white;
+}
+
+#footimg{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width:769px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    padding: 0 40px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/bonus/6a3ba459161247beaa54e24e456254d3-Picsart-AiImageEnhancer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(250, 198, 101); */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#form{
+    padding-top: 5px;
+    width: 72%;
+    border-radius: 15px;
+    margin-top: 95px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+
+#input1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.input1s{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+#emailinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#passinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#show{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#showpass{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#showpass label{
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+#agree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#agree label{
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#agree input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit{
+    height: 50px;
+    width: 160px;
+    border: 0;
+    border-radius: 22px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 16px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 530;
+}
+
+#submit:hover{
+    font-size: 16.5px;
+    scale: 1.1;
+}
+
+#message{
+    position: absolute;
+    left: 33%;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    top: 10px;
+    background-color: rgb(255, 119, 0);
+    height: 160px;
+    width: 265px;
+
+}
+
+footer{
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 45px;
+}
+}
+@media (max-width:376px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 119, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#loginlink{
+    margin-right: 0px;
+    font-size: 12px;
+}
+
+#headerdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#logo{
+    width: 35px;
+    height: 35px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+span{
+    color: rgb(255, 119, 0);
+}
+
+#store{
+    height: 35px;
+    width: 120px;
+    border: 0;
+    border-radius: 22px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 13px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 530;
+    margin-right: 10px;
+}
+
+#store:hover{
+    scale: 1.05;
+}
+
+#form{
+    padding-top: 5px;
+    width: 90%;
+    height: 76%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 55px;
+}
+
+form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+
+#input1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.input1s{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+#emailinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#passinp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#show{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#showpass{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#showpass label{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#agree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-left: 1px;
+}
+
+#agree label{
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+#agree input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit{
+    height: 40px;
+    width: 140px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(255, 119, 0);
+    color: black;
+    font-size: 16px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 530;
+}
+
+#submit:hover{
+    font-size: 16.5px;
+    scale: 1.1;
+}
+
+#message{
+    position: absolute;
+    left: 15%;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    top: 10px;
+    background-color: rgb(255, 119, 0);
+    height: 160px;
+    width: 265px;
+
+}
+#footerdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}

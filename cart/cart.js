@@ -1,15 +1,18 @@
+// საჭირო ელემენტების წამოღება
 let logged = JSON.parse(localStorage.getItem("loggedin"))
 const or = document.getElementById("loginlink")
 const cartdiv = document.getElementById("cart")
 let cart = JSON.parse(localStorage.getItem("Cart")) || []
 const body = document.getElementById("container")
 
+// თუ არ იყო localstorage ში მაშინ ვუტოლებთ false-ს
 
 if (logged === null) {
   logged = false
   localStorage.setItem("loggedin", JSON.stringify(false))
 }
 
+// ვამოწმებთ logged ცვლადს და გამოგვაქვს მაგის მიხედვით შესაბამისი ელემენტები
 if (logged === false){
     or.innerHTML = `
         <a href="../signup/signup.html">Sign up</a>/<a href="../login/login.html">Login</a>
@@ -39,8 +42,11 @@ if (logged === false){
 
 console.log(JSON.parse(localStorage.getItem("Cart")))
 
+
+// ვქმნით renderCart-ფუნქციას რომელსაც გადაეცემა სია
 function renderCart(li){
     cartdiv.innerHTML = ""
+    // თუ რეგისტრირებული არაა ან კალათა ცარიელია გამოგვაქვს შესაბამისი მესიჯები
     if (logged === false){
         cartdiv.innerHTML = "Login to use the cart"
         cartdiv.style.color = "red"
@@ -55,6 +61,7 @@ function renderCart(li){
         cartdiv.style.backgroundColor = "white"
         cartdiv.style.border = 0
     }else{
+        // თუ ეკრანის ზომა ნაკლებია 376 პიქსელზე ვამატებთ ელემენტებს სხვა განლაგებით
         if (window.innerWidth<376){
             li.forEach((element) => {
                 const item = document.createElement("div")
@@ -141,7 +148,8 @@ function renderCart(li){
         }
         cartdiv.style.border = "1px solid black"
         cartdiv.style.backgroundColor = "#f4f6f9"
-        
+
+        // ვითვლით საბოლოო ფასს
         let totalprice = 0
         li.forEach((item)=>{
             totalprice+=item.price*item.quantity
@@ -153,6 +161,7 @@ function renderCart(li){
         const hr = document.createElement("hr")
         cartdiv.appendChild(hr)
 
+        // ვქმნით ღილაკებს კალათის გასუფთავებისთვის და გადახდისთვის
         const buttondiv = document.createElement("div")
         buttondiv.id = "buttondiv"
         buttondiv.innerHTML =`
@@ -163,12 +172,14 @@ function renderCart(li){
             cartdiv.appendChild(buttondiv)
         }
 
+        // კალათის გასუფთავების eventlistener
         document.getElementById("clear").addEventListener('click',()=>{
             cart = []
             localStorage.setItem("Cart", JSON.stringify(cart))
             renderCart(cart)
         })
 
+        // შეძენის eventlistener რომელსაც გამოაქვს შესაბამისი მესიჯი
         document.getElementById("buy").addEventListener("click",()=>{
             cart = []
             localStorage.setItem("Cart", JSON.stringify(cart))
@@ -215,7 +226,10 @@ function renderCart(li){
     
 }
 
+// კალათის რენდერი
 renderCart(cart)
+
+// ეკრანის ზომის ცვლილების eventlistener 
 window.addEventListener("resize", () => {
     renderCart(cart);
 });

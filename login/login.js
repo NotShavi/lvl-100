@@ -1,3 +1,4 @@
+// საჭირო ელემენტების წამოღება/შექმნა
 const form = document.querySelector("form")
 const div = document.getElementById("form")
 const users = JSON.parse(localStorage.getItem("Users")) || []
@@ -11,6 +12,8 @@ failed.id = "failed"
 failed.innerHTML = "Email or password is incorrect"
 failed.style.color = "red"
 
+
+// eventlistener პაროლის გამოსაჩენად
 checkbox.addEventListener("change",()=>{
     if (checkbox.checked){
         passwordinp.type = "text"
@@ -19,10 +22,14 @@ checkbox.addEventListener("change",()=>{
     }
 })
 
+
+// eventlistener ფორმის გამოგზავნაზე
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     const password = e.target.password.value
     const email = e.target.email.value
+
+    // თუ ამ ემაილით და პაროლით ნამდვილად არის მომხმარებელი დარეგისტრირებული მაშინ გამოგვაქვს შესაბამისი მესიჯი
     if (users.some((value) => {
         return value.email === email && value.password === password
     })){
@@ -53,6 +60,8 @@ form.addEventListener("submit",(e)=>{
     }
 })
 
+
+// მესიჯის წაშლის eventlistener
 x.addEventListener("click",()=>{
     message.remove()
 })
